@@ -16,3 +16,7 @@ Howto report a bug
 
 http://groups.google.com/group/ext3grep/web/sticky-howto-report-a-bug
 
+Notes:
+------
+* https://ext4.wiki.kernel.org/index.php/Ext4_Disk_Layout#Journal_.28jbd2.29
+* https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Storage_Administration_Guide/ch-ext4.html
