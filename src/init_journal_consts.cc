@@ -34,7 +34,8 @@ void init_journal_consts(void)
 {
   // Initialize journal constants.
   journal_block_size_ = be2le(journal_super_block.s_blocksize);
-  ASSERT(journal_block_size_ == block_size_);	// Sorry, I'm trying to recover my own data-- have no time to deal with this.
+  // CG: Based on the comment below, I assume this can be safely commented out
+  //ASSERT(journal_block_size_ == block_size_);	// Sorry, I'm trying to recover my own data-- have no time to deal with this.
   journal_maxlen_ = be2le(journal_super_block.s_maxlen);
   journal_first_ = be2le(journal_super_block.s_first);
   journal_sequence_ = be2le(journal_super_block.s_sequence);
