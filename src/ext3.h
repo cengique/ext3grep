@@ -110,9 +110,9 @@ struct Inode : protected ext3_inode {
     __u32 faddr(void) const { return i_faddr; }
     __u16 uid_high(void) const { return i_uid_high; }
     __u16 gid_high(void) const { return i_gid_high; }
-    __u32 reserved2(void) const { return i_reserved2; }
+    /*    __u32 reserved2(void) const { return i_reserved2; }
 
-    void set_reserved2(__u32 val) { i_reserved2 = val; }
+	  void set_reserved2(__u32 val) { i_reserved2 = val; }*/
 
     // Returns true if this inode is part of an ORPHAN list.
     // In that case, dtime is overloaded to point to the next orphan and contains an inode number.

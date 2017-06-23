@@ -67,7 +67,7 @@ std::ostream& operator<<(std::ostream& os, ext3_super_block const& super_block)
   os << "Block size: " << block_size(super_block) << '\n';
   os << "Fragment size: " << fragment_size(super_block) << '\n';
   os << "Number of blocks per group: " << blocks_per_group(super_block) << '\n';
-  os << "Number of fragments per group: " << super_block.s_frags_per_group << '\n';
+  //  os << "Number of fragments per group: " << super_block.s_frags_per_group << '\n';
   os << "Number of inodes per group: " << inodes_per_group(super_block) << '\n';
   time_t mtime = super_block.s_mtime;
   os << "Mount time: " << std::ctime(&mtime);
